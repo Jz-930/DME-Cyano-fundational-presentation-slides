@@ -59,7 +59,7 @@ export function Navigation() {
                 <div className="w-px h-5 bg-white/20 mx-1"></div>
 
                 <Link
-                    href="/contact"
+                    href="#contact"
                     className="flex items-center justify-center px-4 py-1.5 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 transition-colors text-white font-medium text-sm ml-2"
                 >
                     联系我们

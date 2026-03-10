@@ -37,12 +37,12 @@ export function CyanoIntroSlide() {
                         </span>
                     </h2>
 
-                    <div className="space-y-6 mt-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
                         {intro.painPoints.map((point, index) => (
-                            <div key={index} className="bg-red-950/40 backdrop-blur-md border border-red-900/60 p-6 rounded-2xl relative shadow-[0_0_20px_rgba(239,68,68,0.1)] hover:shadow-[0_0_30px_rgba(239,68,68,0.15)] transition-shadow">
-                                <div className="absolute top-0 right-0 bg-red-600 text-white text-xs font-black uppercase tracking-widest px-3 py-1.5 rounded-bl-xl shadow-md">Pain Point {index + 1}</div>
-                                <h3 className="text-xl font-bold text-red-400 mb-3">{point.title}</h3>
-                                <p className="text-red-200/80 text-sm md:text-base font-light leading-relaxed">{point.desc}</p>
+                            <div key={index} className="bg-red-950/40 backdrop-blur-md border border-red-900/60 p-5 lg:p-6 rounded-2xl relative shadow-[0_0_20px_rgba(239,68,68,0.1)] hover:shadow-[0_0_30px_rgba(239,68,68,0.15)] transition-shadow">
+                                <div className="absolute top-0 right-0 bg-red-600 text-white text-[10px] md:text-xs font-black uppercase tracking-widest px-2 py-1 md:px-3 md:py-1.5 rounded-bl-xl shadow-md">Point {index + 1}</div>
+                                <h3 className="text-lg md:text-xl font-bold text-red-400 mb-2 md:mb-3">{point.title}</h3>
+                                <p className="text-red-200/80 text-xs md:text-sm font-light leading-relaxed">{point.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -82,9 +82,9 @@ export function CyanoIntroSlide() {
                         </div>
 
                         <div className="w-full grid grid-cols-2 gap-6">
-                            {intro.solution.tags.map((tag, index) => (
+                            {intro.solution.tags.map((tag: any, index: number) => (
                                 <div key={index} className="bg-[#02050a]/60 border border-indigo-500/30 rounded-2xl p-5 shadow-inner hover:border-cyan-500/50 transition-colors group/tag">
-                                    <p className={`${index === 0 ? 'text-indigo-400' : 'text-cyan-400'} text-xs uppercase tracking-widest mb-2 font-mono group-hover/tag:text-white transition-colors`}>{tag.label}</p>
+                                    <p className={`text-${tag.labelColor}-400 text-xs uppercase tracking-widest mb-2 font-mono group-hover/tag:text-white transition-colors`}>{tag.label}</p>
                                     <p className="text-white font-bold text-lg">{tag.value}</p>
                                 </div>
                             ))}

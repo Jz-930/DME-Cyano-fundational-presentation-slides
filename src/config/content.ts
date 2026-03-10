@@ -472,28 +472,36 @@ export const content = {
     // Module 5: Cyano AI
     cyanoAi: {
         intro: {
-            title: "为什么你不敢用 ChatGPT接待高净值客户？",
+            title: "为什么 ChatGPT 无法直接接管您的业务？",
             painPoints: [
                 {
-                    title: "致命幻觉 (Hallucination)",
-                    desc: "金融行业极其严谨。如果通用 AI 把分红率算错，或者瞎编了不符合 CRA 规定的免税条款，你要承担法律责任。"
+                    title: "知识孤岛",
+                    desc: "核心数据散落在文档、数据库与历史记录中，通用 AI 拿不到也用不好，回答空洞无据。"
                 },
                 {
-                    title: "数据孤岛与隐私",
-                    desc: "客户的税单、保单是极度私密的资产数据。你敢放心上传到公有云吗？你需要完全私有化部署的安全围栏。"
+                    title: "上下文受限",
+                    desc: "模型窗口有限，信息喂不全就会产生幻觉，导致输出结果漂移，无法处理复杂任务。"
+                },
+                {
+                    title: "输出不可控",
+                    desc: "同题不同答，缺乏校验规则，企业不敢将 AI 用于合同、财务等关键业务流程。"
+                },
+                {
+                    title: "无法规模化",
+                    desc: "依赖个别员工的 Prompt 技巧只能救急，无法沉淀为可复用的组织能力，且难以审计。"
                 }
             ],
             solution: {
                 title: "Cyano.",
                 subtitle: "Enterprise Agentic AI",
                 description: [
-                    "DME 联合头部 AI Labs 研发。",
-                    "专门喂养北美税务、保险法案、各大公司核保指南出来的“超级助理”。",
-                    "他不代替你销售，但他能让你一个人活成一支军队。"
+                    "有护栏的“专属企业级大脑”。",
+                    "把核保手册与几千页英文 Policy 喂给 Cyano。",
+                    "回答绝不越雷池半步，只在合规的安全资料里找答案。"
                 ],
                 tags: [
-                    { label: "Knowledge", value: "100% 垂直领域" },
-                    { label: "Security", value: "企业私有化部署" }
+                    { label: "RAG 技术", labelColor: "indigo", value: "开卷考试" },
+                    { label: "合规保障", labelColor: "cyan", value: "私有化部署" }
                 ]
             }
         },
