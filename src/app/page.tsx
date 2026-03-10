@@ -1,7 +1,7 @@
 'use client';
 
+import { WelcomeQRSlide } from '@/components/slides/WelcomeQRSlide';
 import { HeroSlide } from '@/components/slides/HeroSlide';
-import { ThreeDeadEndsSlide } from '@/components/slides/ThreeDeadEndsSlide';
 import { PainPointsSlide } from '@/components/slides/PainPointsSlide';
 import { FunnelSlide } from '@/components/slides/FunnelSlide';
 import { TrafficIntro } from '@/components/slides/TrafficIntro';
@@ -35,8 +35,8 @@ export default function Presentation() {
   return (
     <main className="bg-[#02050a] text-white font-sans min-h-screen">
       <Navigation />
+      <WelcomeQRSlide />
       <HeroSlide />
-      <ThreeDeadEndsSlide />
       <PainPointsSlide />
       <FunnelSlide />
 

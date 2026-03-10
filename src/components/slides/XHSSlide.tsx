@@ -3,6 +3,7 @@
 import { content } from '@/config/content';
 import { RevealWrapper } from '@/components/ui/RevealWrapper';
 import { Camera, FileText, AlertOctagon, Heart } from 'lucide-react';
+import { XiaohongshuIcon } from '@/components/ui/icons/PlatformIcons';
 
 export function XHSSlide() {
     const { title, points, mockPosts } = content.platforms.xiaohongshu;
@@ -22,12 +23,17 @@ export function XHSSlide() {
                             Platform 05 / 小红书 (Red)
                         </div>
 
-                        <h2 className="text-4xl md:text-6xl font-bold font-heading mb-4 text-white leading-tight">
-                            {title.split('：')[0]}：<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">
-                                {title.split('：')[1]}
-                            </span>
-                        </h2>
+                        <div className="flex items-center gap-4 mb-4">
+                            <div className="p-3 bg-red-500/10 rounded-2xl border border-red-500/20 backdrop-blur-md shadow-[0_0_20px_rgba(239,68,68,0.15)] text-white">
+                                <XiaohongshuIcon size={48} />
+                            </div>
+                            <h2 className="text-4xl md:text-6xl font-bold font-heading text-white leading-tight">
+                                {title.split('：')[0]}：<br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">
+                                    {title.split('：')[1]}
+                                </span>
+                            </h2>
+                        </div>
                     </RevealWrapper>
 
                     <div className="space-y-6">

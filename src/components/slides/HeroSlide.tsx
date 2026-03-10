@@ -22,20 +22,23 @@ export function HeroSlide() {
 
             <FadeIn delay={0.2} direction="up" className="max-w-5xl z-10 relative">
                 <p className="text-cyan-400 font-bold tracking-widest uppercase mb-4 text-sm md:text-base">
-                    DME Studio & Cyano 联合呈现
+                    DME Studio & Cyano
                 </p>
-                <h1 className="text-5xl md:text-8xl font-bold font-heading leading-tight mb-8">
-                    残酷真相：<br />
-                    <span className="text-gray-300">为什么你的线上获客在</span><br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400 drop-shadow-lg">
-                        “烧钱空转”？
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-heading leading-tight mb-8">
+                    如何让你的线上广告<br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400 drop-shadow-lg">
+                        更有效
+                    </span>
+                    <br />
+                    <span className="text-3xl md:text-5xl text-gray-300 mt-6 md:mt-8 block font-light">
+                        今天我们只讲做法。
                     </span>
                 </h1>
 
                 <AnimatedText
                     as="p"
                     className="text-xl md:text-3xl text-gray-200 font-light leading-relaxed mb-16 max-w-3xl backdrop-blur-sm bg-black/20 p-6 rounded-2xl border border-white/5"
-                    text="我们不教你怎么发朋友圈，我们为你搭建从“高质感视觉资产”、“交互式Web App”到“企业级AI系统”的自动化增长引擎。"
+                    text={"尽量不讲太多术语和概念，跳脱小红书销售的话术，我们为你搭建从“高质感视觉资产”、“交互式Web\u00A0App”到“企业级AI系统”的自动化增长引擎。"}
                     delay={0.5}
                 />
 

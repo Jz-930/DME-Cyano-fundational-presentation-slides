@@ -3,6 +3,7 @@
 import { content } from '@/config/content';
 import { RevealWrapper } from '@/components/ui/RevealWrapper';
 import { Smartphone, BookOpen, Video } from 'lucide-react';
+import { WeChatIcon } from '@/components/ui/icons/PlatformIcons';
 
 export function WeChatSlide() {
     const { title, points } = content.platforms.wechat;
@@ -22,12 +23,17 @@ export function WeChatSlide() {
                 </RevealWrapper>
 
                 <RevealWrapper delay={0.2}>
-                    <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-6 text-white leading-tight drop-shadow-xl">
-                        {title.split('：')[0]}：<br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#07c160] to-emerald-300">
-                            {title.split('：')[1]}
-                        </span>
-                    </h2>
+                    <div className="flex flex-col items-center gap-4 mb-6">
+                        <div className="p-3 bg-[#07c160]/10 rounded-2xl border border-[#07c160]/20 backdrop-blur-md shadow-[0_0_20px_rgba(7,193,96,0.15)] flex items-center justify-center">
+                            <WeChatIcon size={56} />
+                        </div>
+                        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading text-white leading-tight drop-shadow-xl">
+                            {title.split('：')[0]}：<br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#07c160] to-emerald-300">
+                                {title.split('：')[1]}
+                            </span>
+                        </h2>
+                    </div>
                 </RevealWrapper>
             </div>
 

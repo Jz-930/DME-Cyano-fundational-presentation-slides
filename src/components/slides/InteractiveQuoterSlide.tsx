@@ -101,7 +101,7 @@ export function InteractiveQuoterSlide() {
                         </div>
 
                         {/* Body */}
-                        <div className="p-8 pb-12 h-[420px] flex flex-col justify-center relative">
+                        <div className="p-6 md:p-8 pb-10 min-h-[520px] flex flex-col justify-center relative">
                             {/* Inner subtle glow */}
                             <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/5 to-transparent pointer-events-none"></div>
 

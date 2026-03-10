@@ -3,6 +3,7 @@
 import { content } from '@/config/content';
 import { RevealWrapper } from '@/components/ui/RevealWrapper';
 import { Play, Heart, MessageCircle, Share2, Flame } from 'lucide-react';
+import { TikTokIcon } from '@/components/ui/icons/PlatformIcons';
 
 export function TikTokAdsSlide() {
     const { title, points, mockVideo } = content.platforms.tiktok;
@@ -90,12 +91,17 @@ export function TikTokAdsSlide() {
                             Platform 04 / TikTok
                         </div>
 
-                        <h2 className="text-4xl md:text-6xl font-bold font-heading mb-4 text-white leading-tight">
-                            {title.split('：')[0]}：<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-200 to-cyan-400">
-                                {title.split('：')[1]}
-                            </span>
-                        </h2>
+                        <div className="flex items-center gap-4 mb-4">
+                            <div className="p-3 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-md shadow-[0_0_20px_rgba(255,255,255,0.05)] text-white">
+                                <TikTokIcon size={48} />
+                            </div>
+                            <h2 className="text-4xl md:text-6xl font-bold font-heading text-white leading-tight">
+                                {title.split('：')[0]}：<br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-200 to-cyan-400">
+                                    {title.split('：')[1]}
+                                </span>
+                            </h2>
+                        </div>
                     </RevealWrapper>
 
                     <div className="space-y-6">
