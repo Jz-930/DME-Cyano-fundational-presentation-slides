@@ -5,7 +5,7 @@ import { RevealWrapper } from '@/components/ui/RevealWrapper';
 import { CheckCircle2, XCircle } from 'lucide-react';
 
 export function AssetsDefinition() {
-    const { title, description, badAssets, premiumAssets, quote } = content.assets.definition;
+    const { title, description, badAssets, premiumAssets } = content.assets.definition;
 
     return (
         <section className="relative min-h-[100dvh] w-full flex flex-col items-center justify-center p-8 bg-[#0a0a0a] overflow-hidden z-10 border-t border-white/5 pt-20 pb-20">
@@ -76,15 +76,7 @@ export function AssetsDefinition() {
 
             </div>
 
-            <RevealWrapper delay={0.6} className="z-10 relative mt-16 max-w-4xl mx-auto w-full">
-                <div className="text-center bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-xl">
-                    <p className="text-xl text-gray-200 font-light">
-                        {quote.split('你视觉资产的质感，就等同于你几百万保单的含金量。')[0]}
-                        <strong className="text-cyan-400 font-bold">你视觉资产的质感，就等同于你几百万保单的含金量。</strong>
-                        {quote.split('你视觉资产的质感，就等同于你几百万保单的含金量。')[1]}
-                    </p>
-                </div>
-            </RevealWrapper>
+
 
         </section>
     );

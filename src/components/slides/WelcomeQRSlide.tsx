@@ -19,7 +19,7 @@ export function WelcomeQRSlide() {
     ];
 
     return (
-        <section className="relative min-h-[100dvh] w-full flex items-center justify-center p-8 bg-[#02050a] z-10 overflow-hidden snap-start">
+        <section className="relative min-h-[100dvh] w-full flex items-center justify-center p-4 md:p-8 bg-[#02050a] z-10 overflow-hidden snap-start">
             {/* Background Cinematic Effects */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-900/20 blur-[150px] rounded-full mix-blend-screen pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-900/10 blur-[150px] rounded-full mix-blend-screen pointer-events-none" />
@@ -28,26 +28,27 @@ export function WelcomeQRSlide() {
 
                 {/* Left Side: QR Code */}
                 <RevealWrapper className="flex flex-col items-center lg:items-start text-center lg:text-left">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-white drop-shadow-md">
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-8 text-white drop-shadow-md">
                         打开<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">此页面</span>
                     </h1>
 
-                    <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 flex flex-col items-center shadow-[0_0_50px_rgba(6,182,212,0.15)] relative group transition-all duration-500 hover:border-cyan-500/30 hover:shadow-[0_0_60px_rgba(6,182,212,0.25)]">
-                        <div className="bg-white p-4 rounded-2xl mb-6 transform group-hover:scale-105 transition-transform duration-500 shadow-xl border border-gray-100">
+                    <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-3xl p-4 md:p-8 flex flex-col items-center shadow-[0_0_50px_rgba(6,182,212,0.15)] relative group transition-all duration-500 hover:border-cyan-500/30 hover:shadow-[0_0_60px_rgba(6,182,212,0.25)]">
+                        <div className="bg-white p-3 md:p-4 rounded-xl md:rounded-2xl mb-4 md:mb-6 transform group-hover:scale-105 transition-transform duration-500 shadow-xl border border-gray-100">
                             <QRCodeSVG
-                                value="https://dme-cyano-fundational-presentation-slides-ito2lknzq.vercel.app/"
-                                size={240}
+                                value="https://dme-cyano-fundational-presentation.vercel.app/"
+                                size={180}
                                 bgColor={"#ffffff"}
                                 fgColor={"#050a15"}
                                 level={"Q"}
                                 includeMargin={false}
+                                className="w-[140px] h-[140px] md:w-[180px] md:h-[180px]"
                             />
                         </div>
                         <div className="text-center w-full relative z-10">
-                            <p className="text-white text-lg font-medium mb-2">
+                            <p className="text-white text-sm md:text-lg font-medium mb-1 md:mb-2">
                                 扫描此二维码，用浏览器打开
                             </p>
-                            <p className="text-cyan-400 text-base font-light tracking-wide bg-cyan-900/20 py-1.5 px-4 rounded-full inline-block border border-cyan-500/20">
+                            <p className="text-cyan-400 text-xs md:text-base font-light tracking-wide bg-cyan-900/20 py-1 px-3 md:py-1.5 md:px-4 rounded-full inline-block border border-cyan-500/20">
                                 实时跟踪查看此页面
                             </p>
                         </div>
@@ -55,7 +56,7 @@ export function WelcomeQRSlide() {
                 </RevealWrapper>
 
                 {/* Right Side: Interactive Acknowledgments */}
-                <RevealWrapper delay={0.2} className="relative min-h-[500px] flex items-center justify-center lg:justify-start lg:pl-10">
+                <RevealWrapper delay={0.2} className="relative min-h-[300px] md:min-h-[500px] flex items-center justify-center lg:justify-start lg:pl-10">
                     <AnimatePresence mode="wait">
 
                         {/* STATE 0: Wellcare Insurance */}

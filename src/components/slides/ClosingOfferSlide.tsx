@@ -12,7 +12,7 @@ export function ClosingOfferSlide() {
     const [activeQr, setActiveQr] = useState<{ src: string, label: string } | null>(null);
 
     return (
-        <section id="contact" className="relative min-h-[100dvh] w-full flex flex-col items-center justify-center p-8 bg-black overflow-hidden border-t border-white/5 py-24">
+        <section id="contact" className="relative min-h-[100dvh] w-full flex flex-col items-center justify-center p-4 md:p-8 bg-black overflow-hidden border-t border-white/5 py-16 md:py-24">
 
             {/* Dramatic central light */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,_rgba(6,182,212,0.15)_0%,_transparent_70%)] pointer-events-none mix-blend-screen mix-blend-lighten" />
@@ -21,11 +21,11 @@ export function ClosingOfferSlide() {
 
                 <RevealWrapper>
                     <p className="text-cyan-400 font-mono text-sm tracking-widest uppercase mb-4">{subtitle}</p>
-                    <h2 className="text-5xl md:text-7xl font-bold font-heading mb-8 text-white leading-tight" dangerouslySetInnerHTML={{ __html: title }} />
+                    <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold font-heading mb-4 md:mb-8 text-white leading-tight" dangerouslySetInnerHTML={{ __html: title }} />
 
-                    <p className="text-gray-300 text-xl md:text-2xl font-light mb-16 leading-relaxed" dangerouslySetInnerHTML={{ __html: description }} />
+                    <p className="text-gray-300 text-base md:text-xl lg:text-2xl font-light mb-8 md:mb-16 leading-relaxed" dangerouslySetInnerHTML={{ __html: description }} />
 
-                    <div className="bg-zinc-900/50 backdrop-blur-xl border border-white/10 p-10 lg:p-14 rounded-[2.5rem] w-full mx-auto shadow-2xl relative overflow-hidden group">
+                    <div className="bg-zinc-900/50 backdrop-blur-xl border border-white/10 p-6 md:p-10 lg:p-14 rounded-2xl md:rounded-[2.5rem] w-full mx-auto shadow-2xl relative overflow-hidden group">
                         <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/5 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
 
                         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center lg:items-center justify-center relative z-10 w-full">

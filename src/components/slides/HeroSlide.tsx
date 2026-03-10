@@ -18,7 +18,21 @@ export function HeroSlide() {
                 }}
             />
             {/* Dark gradient overlay to ensure text legibility */}
-            <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
+            <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#02050a]/80 via-[#02050a]/60 to-[#02050a]/90" />
+
+            {/* 3D Glowing Grid Floor */}
+            <div className="absolute inset-x-0 bottom-0 h-[60%] z-0 overflow-hidden" style={{ perspective: "1000px" }}>
+                <div className="absolute inset-0 z-0" style={{
+                    backgroundImage: "linear-gradient(rgba(34, 211, 238, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 211, 238, 0.15) 1px, transparent 1px)",
+                    backgroundSize: "50px 50px",
+                    transform: "rotateX(75deg) translateY(50px) scale(2.5)",
+                    transformOrigin: "bottom center",
+                    maskImage: "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)",
+                    WebkitMaskImage: "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)"
+                }} />
+                {/* Horizontal scanning scanline */}
+                <div className="absolute inset-x-0 bottom-0 h-1 bg-cyan-400/50 shadow-[0_0_20px_rgba(34,211,238,0.8)] animate-[scan_4s_ease-in-out_infinite_alternate]" />
+            </div>
 
             <FadeIn delay={0.2} direction="up" className="max-w-5xl z-10 relative">
                 <p className="text-cyan-400 font-bold tracking-widest uppercase mb-4 text-sm md:text-base">

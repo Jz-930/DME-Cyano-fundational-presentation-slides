@@ -25,22 +25,23 @@ export function PainPointsSlide() {
             <div className="absolute inset-0 z-0 bg-gradient-to-t from-black via-black/80 to-black/20" />
 
             <FadeIn direction="up" className="z-10 relative">
-                <h2 className="text-4xl md:text-6xl font-bold mb-16 text-center text-white">
+                <h2 className="text-3xl md:text-6xl font-bold mb-8 md:mb-16 text-center text-white">
                     <span className="text-red-500 inline-block px-2 mr-2">三大抱怨</span>，我听到耳朵起茧
                 </h2>
             </FadeIn>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto z-10 relative">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto z-10 relative px-2 md:px-0">
                 {/* Card 1 */}
                 <FadeIn delay={0.2} direction="up" className="h-full">
                     <div
                         onClick={() => setActiveModal(1)}
-                        className="backdrop-blur-md bg-white/5 border border-red-500/20 rounded-2xl p-8 cursor-pointer hover:bg-white/10 hover:border-red-500/50 hover:shadow-[0_0_30px_rgba(239,68,68,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center h-[350px] group"
+                        className="backdrop-blur-md bg-white/5 border border-red-500/20 rounded-2xl p-6 md:p-8 cursor-pointer hover:bg-white/10 hover:border-red-500/50 hover:shadow-[0_0_30px_rgba(239,68,68,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center min-h-[200px] md:h-[350px] group"
                     >
-                        <div className="w-20 h-20 rounded-full bg-red-500/10 flex items-center justify-center mb-6 text-red-500 group-hover:scale-110 group-hover:bg-red-500/20 transition-all">
-                            <AlertTriangle size={36} />
+                        <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-red-500/10 flex items-center justify-center mb-4 md:mb-6 text-red-500 group-hover:scale-110 group-hover:bg-red-500/20 transition-all">
+                            <AlertTriangle size={28} className="md:hidden" />
+                            <AlertTriangle size={36} className="hidden md:block" />
                         </div>
-                        <h3 className="text-3xl font-bold mb-4 text-white">转介绍<br />遇到天花板</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-white">转介绍<br />遇到天花板</h3>
                         <p className="text-gray-400 text-base mb-6 flex-grow">
                             老客户的圈层洗完了，大单全靠碰运气...
                         </p>
@@ -54,12 +55,13 @@ export function PainPointsSlide() {
                 <FadeIn delay={0.4} direction="up" className="h-full">
                     <div
                         onClick={() => setActiveModal(2)}
-                        className="backdrop-blur-md bg-white/5 border border-orange-500/20 rounded-2xl p-8 cursor-pointer hover:bg-white/10 hover:border-orange-500/50 hover:shadow-[0_0_30px_rgba(249,115,22,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center h-[350px] group"
+                        className="backdrop-blur-md bg-white/5 border border-orange-500/20 rounded-2xl p-6 md:p-8 cursor-pointer hover:bg-white/10 hover:border-orange-500/50 hover:shadow-[0_0_30px_rgba(249,115,22,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center min-h-[200px] md:h-[350px] group"
                     >
-                        <div className="w-20 h-20 rounded-full bg-orange-500/10 flex items-center justify-center mb-6 text-orange-400 group-hover:scale-110 group-hover:bg-orange-500/20 transition-all">
-                            <ShieldX size={36} />
+                        <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-orange-500/10 flex items-center justify-center mb-4 md:mb-6 text-orange-400 group-hover:scale-110 group-hover:bg-orange-500/20 transition-all">
+                            <ShieldX size={28} className="md:hidden" />
+                            <ShieldX size={36} className="hidden md:block" />
                         </div>
-                        <h3 className="text-3xl font-bold mb-4 text-white">买来的<br />二手 Lead 有毒</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-white">买来的<br />二手 Lead 有毒</h3>
                         <p className="text-gray-400 text-base mb-6 flex-grow">
                             花钱买名单接通率极低，员工每天打到崩溃...
                         </p>
@@ -76,12 +78,13 @@ export function PainPointsSlide() {
                             setModal3Page(1);
                             setActiveModal(3);
                         }}
-                        className="backdrop-blur-md bg-white/5 border border-purple-500/20 rounded-2xl p-8 cursor-pointer hover:bg-white/10 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center h-[350px] group"
+                        className="backdrop-blur-md bg-white/5 border border-purple-500/20 rounded-2xl p-6 md:p-8 cursor-pointer hover:bg-white/10 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center min-h-[200px] md:h-[350px] group"
                     >
-                        <div className="w-20 h-20 rounded-full bg-purple-500/10 flex items-center justify-center mb-6 text-purple-400 group-hover:scale-110 group-hover:bg-purple-500/20 transition-all">
-                            <Ghost size={36} />
+                        <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-purple-500/10 flex items-center justify-center mb-4 md:mb-6 text-purple-400 group-hover:scale-110 group-hover:bg-purple-500/20 transition-all">
+                            <Ghost size={28} className="md:hidden" />
+                            <Ghost size={36} className="hidden md:block" />
                         </div>
-                        <h3 className="text-3xl font-bold mb-4 text-white">发自媒体<br />纯属自嗨</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-white">发自媒体<br />纯属自嗨</h3>
                         <p className="text-gray-400 text-base mb-6 flex-grow">
                             花几小时做视频，点赞的全是同行刺探情报...
                         </p>

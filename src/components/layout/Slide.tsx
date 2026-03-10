@@ -23,7 +23,7 @@ export function Slide({ children, className, theme = 'dark', ...props }: SlidePr
             transition={{ duration: 0.8 }}
             {...props}
         >
-            <div className="max-w-7xl w-full px-6 md:px-12 lg:px-24 py-16 z-10">
+            <div className="max-w-7xl w-full px-4 md:px-12 lg:px-24 py-12 md:py-16 z-10">
                 {children}
             </div>
         </motion.section>

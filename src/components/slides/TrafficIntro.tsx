@@ -81,7 +81,7 @@ export function TrafficIntro() {
     };
 
     return (
-        <section className="relative min-h-[100dvh] w-full flex items-center justify-center p-8 bg-[#02050a] overflow-hidden z-10 border-t border-white/5 pt-20 pb-20">
+        <section className="relative min-h-[100dvh] w-full flex items-center justify-center p-4 md:p-8 bg-[#02050a] overflow-hidden z-10 border-t border-white/5 pt-16 md:pt-20 pb-16 md:pb-20">
             {/* Platform Abstract Neural Network Background */}
             <div
                 className="absolute inset-0 z-0 opacity-20 mix-blend-screen scale-110"
@@ -95,14 +95,14 @@ export function TrafficIntro() {
             <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-950/30 via-black to-[#050a15]/90 pointer-events-none" />
 
             <div className="max-w-6xl mx-auto w-full z-10 relative">
-                <RevealWrapper className="text-center mb-16 max-w-4xl mx-auto">
+                <RevealWrapper className="text-center mb-8 md:mb-16 max-w-4xl mx-auto">
                     <div className="inline-flex items-center px-4 py-2 bg-blue-500/10 text-blue-400 font-mono text-xs rounded-full border border-blue-500/20 mb-6 font-bold shadow-lg tracking-widest uppercase gap-2 backdrop-blur-md">
                         <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
                         {tag}
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 text-white leading-tight drop-shadow-xl" dangerouslySetInnerHTML={{ __html: title }} />
-                    <p className="text-gray-300 text-xl max-w-2xl mx-auto font-light leading-relaxed bg-black/40 p-4 rounded-2xl border border-white/5 backdrop-blur-sm">
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold font-heading mb-4 md:mb-6 text-white leading-tight drop-shadow-xl" dangerouslySetInnerHTML={{ __html: title }} />
+                    <p className="text-gray-300 text-base md:text-xl max-w-2xl mx-auto font-light leading-relaxed bg-black/40 p-3 md:p-4 rounded-xl md:rounded-2xl border border-white/5 backdrop-blur-sm">
                         {description}
                     </p>
                 </RevealWrapper>
@@ -113,7 +113,7 @@ export function TrafficIntro() {
                         <RevealWrapper key={index} delay={0.2 * (index + 1)} className="h-full">
                             <div
                                 onClick={() => setSelectedPopup(index)}
-                                className={`bg-[#050a15]/80 backdrop-blur-xl border ${getColorClass(q.color, 'border')} p-8 lg:p-10 rounded-3xl h-full group hover:-translate-y-2 transition-all duration-500 ${getColorClass(q.color, 'hoverBorder')} hover:bg-[#0a1225]/90 shadow-xl hover:${getColorClass(q.color, 'shadow')} relative overflow-hidden flex flex-col justify-between cursor-pointer`}
+                                className={`bg-[#050a15]/80 backdrop-blur-xl border ${getColorClass(q.color, 'border')} p-5 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl h-full group hover:-translate-y-2 transition-all duration-500 ${getColorClass(q.color, 'hoverBorder')} hover:bg-[#0a1225]/90 shadow-xl hover:${getColorClass(q.color, 'shadow')} relative overflow-hidden flex flex-col justify-between cursor-pointer`}
                             >
                                 <div className={`absolute ${index % 2 === 0 ? 'top-0' : 'bottom-0'} right-0 w-40 h-40 ${getColorClass(q.color, 'bg')} rounded-full blur-[50px] group-hover:scale-150 transition-transform duration-700 pointer-events-none`}></div>
 

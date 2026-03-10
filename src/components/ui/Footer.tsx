@@ -38,18 +38,14 @@ export function Footer() {
                     <div>
                         <h4 className="text-white font-bold mb-6 font-heading tracking-wide uppercase">Connect</h4>
                         <ul className="space-y-3">
-                            <li>Toronto, ON</li>
-                            <li><a href="mailto:hello@dmestudio.ca" className="hover:text-cyan-400 transition-colors">hello@dmestudio.ca</a></li>
+                            <li><a href="tel:+16478706338" className="hover:text-cyan-400 transition-colors">+1 647-870-6338</a></li>
+                            <li><a href="mailto:jiackey.zhang@dmestudio.net" className="hover:text-cyan-400 transition-colors">jiackey.zhang@dmestudio.net</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="border-t border-white/5 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} DME Studio & Cyano. All rights reserved.</p>
-                    <div className="flex gap-6 mt-4 md:mt-0">
-                        <span className="hover:text-white transition-colors cursor-pointer">Privacy Policy</span>
-                        <span className="hover:text-white transition-colors cursor-pointer">Terms of Service</span>
-                    </div>
+                <div className="border-t border-white/5 mt-16 pt-8 flex items-center justify-center text-xs text-gray-500">
+                    <p>&copy; {new Date().getFullYear()} DME Studio &amp; Cyano. All rights reserved.</p>
                 </div>
             </div>
         </footer>

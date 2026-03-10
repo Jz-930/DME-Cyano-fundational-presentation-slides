@@ -17,16 +17,16 @@ export function Navigation() {
     }, []);
 
     return (
-        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 pointer-events-none ${scrolled ? 'bg-black/60 backdrop-blur-md border-b border-white/10 py-4 shadow-lg' : 'bg-transparent py-6'
+        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 pointer-events-none ${scrolled ? 'bg-black/60 backdrop-blur-md border-b border-white/10 py-2 md:py-4 shadow-lg' : 'bg-transparent py-3 md:py-6'
             }`}>
-            <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-end gap-x-6 items-center w-full pointer-events-auto">
+            <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex justify-end gap-x-3 md:gap-x-6 items-center w-full pointer-events-auto">
                 <Link
                     href="https://dmestudio-portfolio.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-x-2 hover:opacity-80 transition-opacity"
                 >
-                    <div className="relative h-8 w-10">
+                    <div className="relative h-6 w-8 md:h-8 md:w-10">
                         <Image
                             src="/images/logos/dmmi_logo_white.webp"
                             alt="DME Studio Logo"
@@ -37,7 +37,7 @@ export function Navigation() {
                     <span className="text-white font-bold text-sm tracking-widest hidden sm:inline-block">DME Studio</span>
                 </Link>
 
-                <div className="w-px h-5 bg-white/20 mx-1"></div>
+                <div className="w-px h-4 md:h-5 bg-white/20 mx-0.5 md:mx-1"></div>
 
                 <Link
                     href="https://cyano-display.netlify.app/"
@@ -45,7 +45,7 @@ export function Navigation() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-x-2 hover:opacity-80 transition-opacity"
                 >
-                    <div className="relative h-6 w-8">
+                    <div className="relative h-5 w-7 md:h-6 md:w-8">
                         <Image
                             src="/images/logos/cyano_logo_green.webp"
                             alt="Cyano Logo"
@@ -60,7 +60,7 @@ export function Navigation() {
 
                 <Link
                     href="#contact"
-                    className="flex items-center justify-center px-4 py-1.5 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 transition-colors text-white font-medium text-sm ml-2"
+                    className="flex items-center justify-center px-3 py-1 md:px-4 md:py-1.5 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 transition-colors text-white font-medium text-xs md:text-sm ml-1 md:ml-2"
                 >
                     联系我们
                 </Link>
