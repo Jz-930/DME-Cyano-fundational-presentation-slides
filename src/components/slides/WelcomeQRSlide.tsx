@@ -19,7 +19,7 @@ export function WelcomeQRSlide() {
     ];
 
     return (
-        <section className="relative min-h-[100dvh] w-full flex items-center justify-center p-4 md:p-8 bg-[#02050a] z-10 overflow-hidden snap-start">
+        <section className="relative min-h-[100dvh] w-full flex items-center justify-center pt-24 pb-4 px-4 md:pt-32 md:pb-8 md:px-8 bg-[#02050a] z-10 overflow-hidden snap-start">
             {/* Background Cinematic Effects */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-900/20 blur-[150px] rounded-full mix-blend-screen pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-900/10 blur-[150px] rounded-full mix-blend-screen pointer-events-none" />
